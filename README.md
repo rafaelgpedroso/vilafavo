@@ -1,6 +1,7 @@
 # Vila Favo - Mobilidade Urbana
+![alt text](https://raw.githubusercontent.com/rafaelgpedroso/vilafavo/master/img/init.jpg)
 Vila Favo é um jogo educativo sobre mobilidade urbana do gênero dos jogos de estratégia voltado para TVs digitais conectadas, sendo elaborado para o desenvolvimento em Ginga-NCL. O ambiente do jogo é o interior de uma simpática colmeia, onde as abelhas vão desenvolver uma sociedade muito parecida com a dos seres humanos: uma cidade chamada Vila Favo, que viverá problemas de mobilidade urbana característicos das grandes cidades do mundo. O desafio do jogo é implantar ações de melhorias da circulação na cidade criando uma estrutura de mobilidade sustentável, garantindo inclusão social, acessibilidade, preservação do meio ambiente e qualidade de vida para a população. Em cada fase do jogo, Vila Favo vai crescer um pouco mais e, de maneira prática, o jogador poderá utilizar os recursos econômicos gerados na cidade para implantar soluções como linhas de transporte coletivo, corredores e faixas exclusivas para ônibus, ciclovias e ciclofaixas, identificando estrategicamente as melhores escolhas para problemas específicos de mobilidade, e observando indicadores de acidentes, congestionamento e poluição, além de investir em projetos de acessibilidade e inclusão.
-
+![alt text](https://raw.githubusercontent.com/rafaelgpedroso/vilafavo/master/img/select.jpg)
 ### Com emulador Ginga
 A maneira mais prática de executar o teste do jogo Vila Favo é com o Astrobox, emulador Ginga gratuito compatível com a implementação Ginga de marcas populares de aparelhos de TV. O teste assim evita problemas com implementações incorretas de alguns aparelhos.
 O Astrobox necessita de uma máquina virtual para ser executado. O roteiro a seguir explica a instalação e configuração do jogo no Astrobox, utilizando o VirtualBox, software gratuito para virtualização.
@@ -16,6 +17,7 @@ Utilize o Modo Expert Nome: Astrobox Tipo: Linux Versão: Ubuntu (32-bit) Tamanh
 Notas:
 • O Astrobox não tem suporte a mídias de áudio em NCL, portanto a trilha sonora é o único recurso do jogo que não pode ser verificado pelo teste com o emulador.
 • O Ginga4Windows, implementação de referência do Ginga não pode ser utilizado para executar Vila Favo porque demonstrou não poder garantir performance para rodar o jogo em taxa próxima a 30 quadros por segundo, e ainda possui falhas de não disponibilizar algumas funções de canvas do Lua imprescindíveis para a execução do projeto e que estão previstas na norma ABNT NBR 15606.
+![alt text](https://raw.githubusercontent.com/rafaelgpedroso/vilafavo/master/img/game.png)
 ### Teste em televisores
 Para executar Vila Favo em uma televisão conectada com Ginga embarcado é necessário enviar o pacote do jogo em um transport stream no padrão do SBTVD a ser decodificado pelo aparelho. A forma de gerar o transport stream, criar as tabelas que compõem o sinal e a configuração do entry point da aplicação Ginga dependem do multiplexador utilizado.
 Quando o aparelho de TV receber a aplicação pelo canal de dados, o jogo será iniciado automaticamente sobrepondo áudio e vídeo.
